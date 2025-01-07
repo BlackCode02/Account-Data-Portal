@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    flex-direction: row;
+    /* display: inline; */
+}
+.container{
+    border: 2px solid red;
+    width: 83vw;
+     color: red;
+}
