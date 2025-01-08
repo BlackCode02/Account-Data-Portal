@@ -14,6 +14,7 @@ import Guesthousedata from "./Components/Guesthousedata/Guesthousedata";
 import Traveldata from "./Components/Traveldata/Traveldata";
 import Debtordata from "./Components/Debtordata/Debtordata";
 import Creditordata from "./Components/Creditordata/Creditordata";
+import Report from "./Components/Report/Report";
 // import Sidebar from './Components/Sidebar/Sidebar';
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/debtordata" element={<Debtordata />} />
           <Route path="/creditor" element={<Creditor />} />
           <Route path="/creditordata" element={<Creditordata />} />
+          <Route path="/report" element={<Report />} />
           <Route path="/approval_admin/:id" element={<Userapproval />} />
           {/* <Route path="/sidebar" element={<Sidebar />} /> */}
         </Routes>

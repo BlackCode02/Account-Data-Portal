@@ -2,12 +2,12 @@ import React from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import "./Hoteldata.css";
 import { useNavigate } from "react-router-dom";
-
 const Hoteldata = () => {
   const click = useNavigate();
   const hotelexpense = () => {
     click("/hotelexpense");
   };
+ 
   return (
     <>
       <div style={{ display: "flex" }}>

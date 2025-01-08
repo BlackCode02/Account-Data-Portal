@@ -40,7 +40,7 @@ const Sidebar = () => {
                 <i class="bi bi-credit-card-2-front"></i>
                 <li>Creditor</li>
               </NavLink>
-              <NavLink to="/">
+              <NavLink to="/report">
                 <i class="bi bi-journal-text"></i>
                 <li>Report</li>
               </NavLink>

@@ -140,24 +140,29 @@ const Hotelexpense = () => {
                     <div className="file-preview">
                       <p>File Name: {selectedFile.name}</p>
                       {filePreview ? (
-                          isPDF ? (
-                            // Embed PDF preview
-                            <iframe
-                              src={filePreview}
-                              title="PDF Preview"
-                              style={{ width: "100%", height: "400px",border: "0px solid white", marginTop: "10px" }}
-                            ></iframe>
-                          ) : (
-                            // Image preview
-                            <img
-                              src={filePreview}
-                              alt="File Preview"
-                              style={{ maxWidth: "100%", marginTop: "10px" }}
-                            />
-                          )
+                        isPDF ? (
+                          // Embed PDF preview
+                          <iframe
+                            src={filePreview}
+                            title="PDF Preview"
+                            style={{
+                              width: "100%",
+                              height: "400px",
+                              border: "0px solid white",
+                              marginTop: "10px",
+                            }}
+                          ></iframe>
                         ) : (
-                          <p>No preview available</p>
-                        )}
+                          // Image preview
+                          <img
+                            src={filePreview}
+                            alt="File Preview"
+                            style={{ maxWidth: "100%", marginTop: "10px" }}
+                          />
+                        )
+                      ) : (
+                        <p>No preview available</p>
+                      )}
                     </div>
                   )}
                 </div>
