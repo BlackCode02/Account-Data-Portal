@@ -1,5 +1,5 @@
 import React from "react";
-import "./Otpconfirmation.css"
+import "./Otpconfirmation.css";
 const Otpconfirmation = () => {
   return (
     <>

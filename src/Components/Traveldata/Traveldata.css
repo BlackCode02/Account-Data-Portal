@@ -1,0 +1,40 @@
+.traveldata-conatiner {
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.traveldata-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+.traveldata-btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 7px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.traveldata-headlinelist {
+  border-bottom: 2px solid gray;
+  padding: 0px 0px 7px 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.traveldata-headlinelist .traveldata-headName {
+  min-width: 13rem;
+}
+.traveldata-headlinelist .traveldata-headName p {
+  font-weight: 600;
+}

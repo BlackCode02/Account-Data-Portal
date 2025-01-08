@@ -1,4 +1,4 @@
-.hotelcontainer {
+.debtorcontainer {
   width: 100%;
   color: #fff;
   padding: 20px;
@@ -7,16 +7,17 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.hotel-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.debtor-heading {
   padding: 5px;
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
-
-.hotel-savedata .upload {
+.debtor-savedata {
+  align-self: center;
+}
+.debtor-savedata .debtor-upload {
   font-size: 16px;
   font-weight: 700;
   padding: 8px 10px;
@@ -26,48 +27,48 @@
   color: #fff;
   border-radius: 4px;
 }
-.hotel-fillup {
+.debtor-fillup {
   display: flex;
 }
-.formcol {
+.debtor-fillup .debtor-formcol {
   display: flex;
   flex-direction: column;
   width: 150% !important;
 }
-.hotel-form {
+.debtor-form {
   display: flex;
   flex-direction: column;
   margin: 0px 0px 40px 0px;
   width: 100% !important;
 }
-.total-amt {
+.debtor-total-amt {
   width: 100%;
 }
-#decription {
+#debtor-decription {
   border: none;
   outline: none;
   width: 100%;
   height: 150px;
   border-radius: 6px;
 }
-.decription-label-bdy {
+.debtor-decription-label-bdy {
   align-items: flex-start !important;
 }
-.form-inputdetail textarea {
+.debtor-inputdetail textarea {
   font-size: 16px;
   padding: 8px 20px;
 }
-.form-label {
+.debtor-label {
   font-size: 18px;
   font-weight: 600;
   width: 33%;
   display: flex;
   align-items: center;
 }
-.form-inputdetail {
+.debtor-inputdetail {
   width: 100%;
 }
-.form-inputdetail input {
+.debtor-inputdetail input {
   padding: 8px 20px;
   outline: none;
   border: none;
@@ -75,31 +76,31 @@
   border-radius: 4px;
   width: 100%;
 }
-.form-fillinput {
+.debtor-fillinput {
   display: flex;
 }
 
-.hotel-amount {
+.debtor-amount {
   display: flex;
   width: 100%;
 }
-.total-label,
-.date-label {
+.debtor-total-label,
+.debtor-date-label {
   width: 100%;
 }
-.date-label {
+.debtor-date-label {
   display: flex;
   align-items: center;
   margin-left: 20px;
 }
-.upload {
+.debtor-upload {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 20px;
 }
-.upload-container,
-.upload-container img {
+.debtor-upload-container,
+.debtor-upload-container img {
   background-color: #fff;
   border-radius: 6px;
   width: 100%;

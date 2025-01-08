@@ -1,4 +1,4 @@
-.hotelcontainer {
+.creditorcontainer {
   width: 100%;
   color: #fff;
   padding: 20px;
@@ -7,16 +7,17 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.hotel-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.creditor-heading {
   padding: 5px;
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
-
-.hotel-savedata .upload {
+.creditor-savedata {
+  align-self: center;
+}
+.creditor-savedata .creditor-upload {
   font-size: 16px;
   font-weight: 700;
   padding: 8px 10px;
@@ -26,48 +27,48 @@
   color: #fff;
   border-radius: 4px;
 }
-.hotel-fillup {
+.creditor-fillup {
   display: flex;
 }
-.formcol {
+.creditor-fillup .creditor-formcol {
   display: flex;
   flex-direction: column;
   width: 150% !important;
 }
-.hotel-form {
+.creditor-form {
   display: flex;
   flex-direction: column;
   margin: 0px 0px 40px 0px;
   width: 100% !important;
 }
-.total-amt {
+.creditor-total-amt {
   width: 100%;
 }
-#decription {
+#creditor-decription {
   border: none;
   outline: none;
   width: 100%;
   height: 150px;
   border-radius: 6px;
 }
-.decription-label-bdy {
+.creditor-decription-label-bdy {
   align-items: flex-start !important;
 }
-.form-inputdetail textarea {
+.creditor-inputdetail textarea {
   font-size: 16px;
   padding: 8px 20px;
 }
-.form-label {
+.creditor-label {
   font-size: 18px;
   font-weight: 600;
   width: 33%;
   display: flex;
   align-items: center;
 }
-.form-inputdetail {
+.creditor-inputdetail {
   width: 100%;
 }
-.form-inputdetail input {
+.creditor-inputdetail input {
   padding: 8px 20px;
   outline: none;
   border: none;
@@ -75,31 +76,32 @@
   border-radius: 4px;
   width: 100%;
 }
-.form-fillinput {
+.creditor-fillinput {
   display: flex;
 }
 
-.hotel-amount {
+.creditor-amount {
   display: flex;
   width: 100%;
 }
-.total-label,
-.date-label {
+.creditor-total-label,
+.creditor-date-label {
   width: 100%;
 }
-.date-label {
+.creditor-date-label {
   display: flex;
   align-items: center;
   margin-left: 20px;
 }
-.upload {
+.creditor-upload {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 20px;
 }
-.upload-container,
-.upload-container img {
+
+.creditor-upload-container,
+.creditor-upload-container img {
   background-color: #fff;
   border-radius: 6px;
   width: 100%;

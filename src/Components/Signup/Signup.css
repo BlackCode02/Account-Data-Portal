@@ -20,7 +20,7 @@
   height: 100%;
   width: 100%;
   bottom: 0px;
-  background-image: url(C:\Users\PC\Desktop\accounts\src\Components\logo-vpvv.png);
+  background-image: url(../logo-vpvv.png);
   left: 0px;
   background-position: center;
   background-repeat: no-repeat;
@@ -83,6 +83,10 @@
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 15px;
+  transition: 0.2s all linear;
+}
+.signup-container .signup-form-container .signup-form .signup-btn:active{
+  transform: scale(0.99);
 }
 .signup-container .signup-vpvv-support {
   position: fixed;

@@ -7,6 +7,16 @@ body {
   background: linear-gradient(#0d1117, #1a1e29);
   height: 100vh;
 }
+.active {
+  color: rgb(242, 0, 255) !important;
+}
+a {
+  display: flex;
+  align-items: center;
+}
+a i {
+  margin-right: 5px;
+}
 .sidebar-container {
   height: 100vh;
   color: #fff;
@@ -18,13 +28,13 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   height: 100%;
-   width: 37vh;
+  width: 40vh;
   padding: 0px 20px 10px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.sidebar-logo-profilename{
+.sidebar-logo-profilename {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,27 +42,27 @@ body {
   margin-bottom: 30px;
 }
 
-.sidebar-logo-profilename p{
-  font-weight: 600; 
+.sidebar-logo-profilename p {
+  font-weight: 600;
   margin: 10px 0px;
 }
 
-.sidebar-list ul{
+.sidebar-list ul {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-.sidebar-list ul a li{
+.sidebar-list ul a li {
   font-weight: 600;
   list-style: none;
 }
-.sidebar-list ul  a{
+.sidebar-list ul a {
   margin: 20px 10px;
   color: #fff;
   text-decoration: none;
 }
 
-.sidebar-admin-btn button{
+.sidebar-admin-btn button {
   border-radius: 6px;
   border: none;
   font-weight: 600;
@@ -63,7 +73,7 @@ body {
   cursor: pointer;
   margin-top: 50px;
 }
-.sidebar-footer-btn{
+.sidebar-footer-btn {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -71,7 +81,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.sidebar-footer-btn button{
+.sidebar-footer-btn button {
   font-size: 15px;
   border: none;
   border-radius: 6px;

@@ -1,81 +1,80 @@
 import React, { useState } from "react";
+import "./Creditor.css";
 import Sidebar from "../Sidebar/Sidebar";
-import "./Hotelexpense.css";
 
-const Hotelexpense = () => {
-  const [selectedFile, setSelectedFile] = useState(null);
-  const [filePreview, setFilePreview] = useState(null);
-  const [isPDF, setIsPDF] = useState(false);
-
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
-    setSelectedFile(file);
-
-    if (file) {
-      // Check if the file is an image
-      if (file.type.startsWith("image")) {
-        const reader = new FileReader();
-        reader.onloadend = () => {
-          setFilePreview(reader.result);
-          setIsPDF(false); // Not a PDF
-        };
-        reader.readAsDataURL(file);
-      }
-      // Check if the file is a PDF
-      else if (file.type === "application/pdf") {
-        const fileURL = URL.createObjectURL(file);
-        setFilePreview(fileURL);
-        setIsPDF(true); // It's a PDF
-      } else {
-        setFilePreview(null); // Reset preview for unsupported files
-        setIsPDF(false);
-      }
-    }
-  };
-
+const Creditor = () => {
+ const [selectedFile, setSelectedFile] = useState(null);
+   const [filePreview, setFilePreview] = useState(null);
+   const [isPDF, setIsPDF] = useState(false);
+ 
+   const handleFileChange = (event) => {
+     const file = event.target.files[0];
+     setSelectedFile(file);
+ 
+     if (file) {
+       // Check if the file is an image
+       if (file.type.startsWith("image")) {
+         const reader = new FileReader();
+         reader.onloadend = () => {
+           setFilePreview(reader.result);
+           setIsPDF(false); // Not a PDF
+         };
+         reader.readAsDataURL(file);
+       }
+       // Check if the file is a PDF
+       else if (file.type === "application/pdf") {
+         const fileURL = URL.createObjectURL(file);
+         setFilePreview(fileURL);
+         setIsPDF(true); // It's a PDF
+       } else {
+         setFilePreview(null); // Reset preview for unsupported files
+         setIsPDF(false);
+       }
+     }
+   };
   return (
     <>
       <div style={{ display: "flex" }}>
         <Sidebar />
-        <div className="hotelcontainer">
+        <div className="creditorcontainer">
           <form action="">
-            <div className="hotel-heading">
-              <h1>Hotel Expense</h1>
-              <div className="hotel-savedata">
-                <button className="upload">Upload</button>
+            <div className="creditor-heading">
+              <h1>Creditor</h1>
+              <div className="creditor-savedata">
+                <button className="creditor-upload">Upload</button>
               </div>
             </div>
 
-            <div className="hotel-fillup">
-              <div className="formcol">
-                <div className="hotel-form fill">
-                  <div className="form-fillinput">
-                    <div className="form-label">
+            <div className="creditor-fillup">
+              <div className="creditor-formcol">
+                <div className="creditor-form fill">
+                  <div className="creditor-fillinput">
+                    <div className="creditor-label">
                       <label htmlFor="subject">Subject</label>
                     </div>
-                    <div className="form-inputdetail">
+                    <div className="creditor-inputdetail">
                       <input type="text" name="subject" id="subject" required />
                     </div>
                   </div>
                 </div>
 
-                <div className="hotel-form fill">
-                  <div className="form-fillinput">
-                    <div className="form-label">
+                <div className="creditor-form fill">
+                  <div className="creditor-fillinput">
+                    <div className="creditor-label">
                       <label htmlFor="reference">Reference Id</label>
                     </div>
-                    <div className="form-inputdetail">
+                    <div className="creditor-inputdetail">
                       <input type="text" name="reference" id="reference" />
                     </div>
                   </div>
                 </div>
 
-                <div className="hotel-form fill">
-                  <div className="form-fillinput">
-                    <div className="form-label">
+                <div className="creditor-form fill">
+                  <div className="creditor-fillinput">
+                    <div className="creditor-label">
                       <label htmlFor="category">Category</label>
                     </div>
-                    <div className="form-inputdetail">
+                    <div className="creditor-inputdetail">
                       <input
                         type="text"
                         name="category"
@@ -86,30 +85,30 @@ const Hotelexpense = () => {
                   </div>
                 </div>
 
-                <div className="hotel-form fill">
-                  <div className="form-fillinput">
-                    <div className="form-label decription-label-bdy">
+                <div className="creditor-form fill">
+                  <div className="creditor-fillinput">
+                    <div className="creditor-label creditor-decription-label-bdy">
                       <label htmlFor="decription" className="decription-label">
                         Description
                       </label>
                     </div>
-                    <div className="form-inputdetail">
+                    <div className="creditor-inputdetail">
                       <textarea
                         name="decription"
-                        id="decription"
+                        id="creditor-decription"
                         required
                       ></textarea>
                     </div>
                   </div>
                 </div>
 
-                <div className="hotel-amount">
-                  <div className="hotel-form fill total-amt">
-                    <div className="form-fillinput total-amt">
-                      <div className="form-label total-label">
+                <div className="creditor-amount">
+                  <div className="creditor-form fill creditor-total-amt">
+                    <div className="creditor-fillinput creditor-total-amt">
+                      <div className="creditor-label creditor-total-label">
                         <label htmlFor="number">Total Amount</label>
                       </div>
-                      <div className="form-inputdetail">
+                      <div className="creditor-inputdetail">
                         <input
                           type="number"
                           name="number"
@@ -120,12 +119,12 @@ const Hotelexpense = () => {
                     </div>
                   </div>
 
-                  <div className="hotel-form fill total-amt">
-                    <div className="form-fillinput">
-                      <div className="form-label date-label ">
+                  <div className="creditor-form fill creditor-total-amt">
+                    <div className="creditor-fillinput">
+                      <div className="creditor-label creditor-date-label ">
                         <label htmlFor="date">Date</label>
                       </div>
-                      <div className="form-inputdetail">
+                      <div className="creditor-inputdetail">
                         <input type="date" name="date" id="date" required />
                       </div>
                     </div>
@@ -133,8 +132,8 @@ const Hotelexpense = () => {
                 </div>
               </div>
 
-              <div className="hotel-form upload">
-                <div className="upload-container">
+              <div className="creditor-form creditor-upload" style={{overflow: "hidden"}}>
+                <div className="creditor-upload-container" style={{overflow: "hidden"}}>
                   <input type="file" onChange={handleFileChange} required />
                   {selectedFile && (
                     <div className="file-preview">
@@ -170,4 +169,4 @@ const Hotelexpense = () => {
   );
 };
 
-export default Hotelexpense;
+export default Creditor;

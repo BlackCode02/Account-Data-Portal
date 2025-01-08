@@ -1,0 +1,82 @@
+.admin-container {
+  height: 100vh;
+  background-color: #051e3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.admin-container img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.admin-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  width: 55em;
+  border-radius: 10px;
+}
+.userdata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img-box {
+  border: 1px solid green;
+  border-radius: 50%;
+  width: 130px;
+  overflow: hidden;
+  height: 130px;
+  margin-bottom: 5px;
+}
+.userdata h4 {
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.userdata-box {
+  margin: 0px 0px 25px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.userdata-box span {
+  font-weight: 600;
+  min-width: 130px;
+}
+.adminapproval {
+  padding: 20px 50px;
+}
+.approval-box {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0d6efd;
+  color: #fff;
+  text-align: center;
+}
+.approval-box h3 {
+  font-size: 3rem;
+}
+.approval-box p {
+  padding: 10px 0px;
+}
+.admin-btn button {
+  font-size: 1.3rem;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 0px 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.2s all ease-in-out;
+}
+.admin-btn button:active{
+  transform: scale(1.1);
+}

@@ -1,0 +1,43 @@
+.hoteldata-conatiner {
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hoteldata-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+.hoteldata-btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 7px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.hoteldata-headlinelist {
+  border-bottom: 2px solid gray;
+  padding: 0px 0px 7px 0px;
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hoteldata-headlinelist .hoteldata-headName{
+min-width: 13rem;
+}
+.hoteldata-headlinelist .hoteldata-headName p {
+  font-weight: 600;
+}

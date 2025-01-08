@@ -1,81 +1,81 @@
 import React, { useState } from "react";
+import "./Guesthouseexpense.css";
 import Sidebar from "../Sidebar/Sidebar";
-import "./Hotelexpense.css";
 
-const Hotelexpense = () => {
-  const [selectedFile, setSelectedFile] = useState(null);
-  const [filePreview, setFilePreview] = useState(null);
-  const [isPDF, setIsPDF] = useState(false);
-
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
-    setSelectedFile(file);
-
-    if (file) {
-      // Check if the file is an image
-      if (file.type.startsWith("image")) {
-        const reader = new FileReader();
-        reader.onloadend = () => {
-          setFilePreview(reader.result);
-          setIsPDF(false); // Not a PDF
-        };
-        reader.readAsDataURL(file);
-      }
-      // Check if the file is a PDF
-      else if (file.type === "application/pdf") {
-        const fileURL = URL.createObjectURL(file);
-        setFilePreview(fileURL);
-        setIsPDF(true); // It's a PDF
-      } else {
-        setFilePreview(null); // Reset preview for unsupported files
-        setIsPDF(false);
-      }
-    }
-  };
+const Guesthouseexpense = () => {
+ const [selectedFile, setSelectedFile] = useState(null);
+   const [filePreview, setFilePreview] = useState(null);
+   const [isPDF, setIsPDF] = useState(false);
+ 
+   const handleFileChange = (event) => {
+     const file = event.target.files[0];
+     setSelectedFile(file);
+ 
+     if (file) {
+       // Check if the file is an image
+       if (file.type.startsWith("image")) {
+         const reader = new FileReader();
+         reader.onloadend = () => {
+           setFilePreview(reader.result);
+           setIsPDF(false); // Not a PDF
+         };
+         reader.readAsDataURL(file);
+       }
+       // Check if the file is a PDF
+       else if (file.type === "application/pdf") {
+         const fileURL = URL.createObjectURL(file);
+         setFilePreview(fileURL);
+         setIsPDF(true); // It's a PDF
+       } else {
+         setFilePreview(null); // Reset preview for unsupported files
+         setIsPDF(false);
+       }
+     }
+   };
 
   return (
     <>
       <div style={{ display: "flex" }}>
         <Sidebar />
-        <div className="hotelcontainer">
+        <div className="guestcontainer">
           <form action="">
-            <div className="hotel-heading">
-              <h1>Hotel Expense</h1>
-              <div className="hotel-savedata">
-                <button className="upload">Upload</button>
+            <div className="guest-heading">
+              <h1>Guest House Expense</h1>
+              <div className="guest-savedata">
+                <button className="guest-upload">Upload</button>
               </div>
             </div>
 
-            <div className="hotel-fillup">
-              <div className="formcol">
-                <div className="hotel-form fill">
-                  <div className="form-fillinput">
-                    <div className="form-label">
+            <div className="guest-fillup">
+              <div className="guest-formcol">
+                <div className="guest-form fill">
+                  <div className="guest-fillinput">
+                    <div className="guest-label">
                       <label htmlFor="subject">Subject</label>
                     </div>
-                    <div className="form-inputdetail">
+                    <div className="guest-inputdetail">
                       <input type="text" name="subject" id="subject" required />
                     </div>
                   </div>
                 </div>
 
-                <div className="hotel-form fill">
-                  <div className="form-fillinput">
-                    <div className="form-label">
+                <div className="guest-form fill">
+                  <div className="guest-fillinput">
+                    <div className="guest-label">
                       <label htmlFor="reference">Reference Id</label>
                     </div>
-                    <div className="form-inputdetail">
+                    <div className="guest-inputdetail">
                       <input type="text" name="reference" id="reference" />
                     </div>
                   </div>
                 </div>
 
-                <div className="hotel-form fill">
-                  <div className="form-fillinput">
-                    <div className="form-label">
+                <div className="guest-form fill">
+                  <div className="guest-fillinput">
+                    <div className="guest-label">
                       <label htmlFor="category">Category</label>
                     </div>
-                    <div className="form-inputdetail">
+                    <div className="guest-inputdetail">
                       <input
                         type="text"
                         name="category"
@@ -86,30 +86,30 @@ const Hotelexpense = () => {
                   </div>
                 </div>
 
-                <div className="hotel-form fill">
-                  <div className="form-fillinput">
-                    <div className="form-label decription-label-bdy">
+                <div className="guest-form fill">
+                  <div className="guest-fillinput">
+                    <div className="guest-label guest-decription-label-bdy">
                       <label htmlFor="decription" className="decription-label">
                         Description
                       </label>
                     </div>
-                    <div className="form-inputdetail">
+                    <div className="guest-inputdetail">
                       <textarea
                         name="decription"
-                        id="decription"
+                        id="guest-decription"
                         required
                       ></textarea>
                     </div>
                   </div>
                 </div>
 
-                <div className="hotel-amount">
-                  <div className="hotel-form fill total-amt">
-                    <div className="form-fillinput total-amt">
-                      <div className="form-label total-label">
+                <div className="guest-amount">
+                  <div className="guest-form fill guest-total-amt">
+                    <div className="guest-fillinput guest-total-amt">
+                      <div className="guest-label guest-total-label">
                         <label htmlFor="number">Total Amount</label>
                       </div>
-                      <div className="form-inputdetail">
+                      <div className="guest-inputdetail">
                         <input
                           type="number"
                           name="number"
@@ -120,12 +120,12 @@ const Hotelexpense = () => {
                     </div>
                   </div>
 
-                  <div className="hotel-form fill total-amt">
-                    <div className="form-fillinput">
-                      <div className="form-label date-label ">
+                  <div className="guest-form fill guest-total-amt">
+                    <div className="guest-fillinput">
+                      <div className="guest-label guest-date-label ">
                         <label htmlFor="date">Date</label>
                       </div>
-                      <div className="form-inputdetail">
+                      <div className="guest-inputdetail">
                         <input type="date" name="date" id="date" required />
                       </div>
                     </div>
@@ -133,8 +133,8 @@ const Hotelexpense = () => {
                 </div>
               </div>
 
-              <div className="hotel-form upload">
-                <div className="upload-container">
+              <div className="guest-form guest-upload">
+                <div className="guest-upload-container">
                   <input type="file" onChange={handleFileChange} required />
                   {selectedFile && (
                     <div className="file-preview">
@@ -170,4 +170,4 @@ const Hotelexpense = () => {
   );
 };
 
-export default Hotelexpense;
+export default Guesthouseexpense;
