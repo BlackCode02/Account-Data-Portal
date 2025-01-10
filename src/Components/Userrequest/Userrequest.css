@@ -1,0 +1,56 @@
+.userrequest-container {
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.userrequest-heading {
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.tabel-box{
+  width: 100%;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+table{
+ min-width: 100vw;
+}
+table th{
+  border: 1px solid #fff;
+}
+#userrequest-decription{
+  max-width: 300px;
+  border: 1px solid #fff;
+  text-align: left !important;
+}
+table td{
+  border: 1px solid #fff;
+  padding: 2px 10px;
+  text-align: center;
+}
+table td button{
+  padding: 5px 7px;
+  margin: 5px;
+  display: inline;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+#approved-btn{
+  background-color: rgb(64, 193, 64);
+}
+#notApproved-btn{
+  background-color: rgb(177, 38, 38);
+}
+#pending-btn{
+  background-color: rgb(194, 194, 65);
+}

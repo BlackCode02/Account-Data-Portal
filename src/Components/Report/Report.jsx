@@ -12,7 +12,7 @@ const Report = () => {
           <div className="report-heading">
             <h1>Report</h1>
           </div>
-          <div className="dashboard">
+          <div className="report-dashboard">
             <div className="total-container">
               <h4>Total of Hotel</h4>
               <p>58,69,94</p>

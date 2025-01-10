@@ -1,20 +1,25 @@
 import React from "react";
-import "./Signup.css";
-const Signup = () => {
+import "./Request.css";
+const Request = () => {
+  
   return (
     <>
-      <div className="signup-container">
-        <div className="signup-form-container">
-          <form action="" className="signup-form">
-            <h1>Welcome to VPVV</h1>
+      <div className="request-container">
+        <div className="request-form-container">
+          <form action="" className="request-form">
+            <h1>Request Form</h1>
+            <div className="request-flex">
+              <div className="request-boxes">
             <label htmlFor="name">Enter your name *</label>
             <input
               type="text"
-              name="text"
+              name="name"
               id="name"
               placeholder="Name"
               required
-            />
+                />
+              </div>
+              <div className="request-boxes">
             <label htmlFor="email">Enter your email *</label>
             <input
               type="email"
@@ -22,34 +27,40 @@ const Signup = () => {
               id="email"
               placeholder="Email"
               required
-            />
-            <label htmlFor="password">Enter a password *</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
-              required
-            />
-            <label htmlFor="">Select location *</label>
-            <select name="Select" id="" className="signup-select">
+              />
+            </div>
+            </div>
+            <div className="request-flex">
+            <div className="request-boxes">
+            <label>Select location *</label>
+            <select name="Select" id="" className="request-select">
               <option value="Select">Select</option>
               <option value="New Delhi">New Delhi</option>
               <option value="Thiruvananthapuram">Thiruvananthapuram</option>
               <option value="Nagpur">Nagpur</option>
-            </select>
-            <label htmlFor="file">Upload user photo *</label>
+                </select>
+              </div>
+              <div className="request-boxes">
+              <label htmlFor="number">Amount *</label>
             <input
-              type="file"
-              name="file"
-              id="file"
-              className="signup-photo"
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Amount"
               required
-            />
-            <button className="signup-btn">Sign Up</button>
+              />
+              </div>
+            </div>
+            <label htmlFor="request-decription">Description *</label>
+            <textarea
+              name="decription"
+              id="request-decription"
+              required
+            ></textarea>
+            <button className="request-btn">Submit Request</button>
           </form>
         </div>
-        <div className="signup-vpvv-support">
+        <div className="request-vpvv-support">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path
               fill="#ffd700"
@@ -63,4 +74,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Request;

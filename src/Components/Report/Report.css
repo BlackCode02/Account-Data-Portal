@@ -16,7 +16,7 @@
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
 }
-.dashboard {
+.report-dashboard {
   display: flex;
   justify-content: space-between;
 }

@@ -1,0 +1,20 @@
+.dashboardcontainer {
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dashboardcontainer .dashboard-content {
+  width: 650px;
+  text-align: center;
+}
+.dashboardcontainer .dashboard-content h1 {
+  font-size: 4rem;
+}

@@ -7,7 +7,7 @@ const Otpconfirmation = () => {
         <div className="otp-form-container">
           <form action="" className="otp-form">
             <h1>Welcome to VPVV</h1>
-            <label>Enter OTP *</label>
+            <label htmlFor="number">Enter OTP *</label>
             <input
               type="number"
               name="number"

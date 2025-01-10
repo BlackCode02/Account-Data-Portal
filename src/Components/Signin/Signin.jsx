@@ -1,13 +1,19 @@
 import React from "react";
 import "./Signin.css";
+import { useNavigate } from "react-router-dom";
+
 const Signin = () => {
+  const click = useNavigate();
+  const request = () => {
+    click("/request_id/id:");
+  };
   return (
     <>
       <div className="signin-container">
         <div className="signin-form-container">
           <form action="" className="signin-form">
             <h1>Sign in to VPVV</h1>
-            <label>Email address *</label>
+            <label htmlFor="email">Email address *</label>
             <input
               type="email"
               name="email"
@@ -15,7 +21,7 @@ const Signin = () => {
               placeholder="Email"
               required
             />
-            <label>Enter password *</label>
+            <label htmlFor="password">Enter password *</label>
             <input
               type="password"
               name="password"
@@ -24,6 +30,7 @@ const Signin = () => {
               required
             />
             <button className="signin-btn">Sign in</button>
+            <button className="signin-btn" onClick={request}>Request form</button>
           </form>
         </div>
         <div className="signin-vpvv-support">

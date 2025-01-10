@@ -47,16 +47,16 @@
 #travel-decription {
   border: none;
   outline: none;
-  width: 100%;
   height: 150px;
-  border-radius: 6px;
+  font-size: 16px;
+ width: 100%;
 }
 .travel-decription-label-bdy {
   align-items: flex-start !important;
 }
 .travel-inputdetail textarea {
-  font-size: 16px;
   padding: 8px 20px;
+  border-radius: 6px;
 }
 .travel-label {
   font-size: 18px;
