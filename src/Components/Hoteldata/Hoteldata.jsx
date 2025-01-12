@@ -1,13 +1,11 @@
 import React from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import "./Hoteldata.css";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 const Hoteldata = () => {
-  const click = useNavigate();
-  const hotelexpense = () => {
-    click("/hotelexpense");
-  };
- 
+
+
   return (
     <>
       <div style={{ display: "flex" }}>
@@ -15,9 +13,29 @@ const Hoteldata = () => {
         <div className="hoteldata-conatiner">
           <div className="hoteldata-heading">
             <h1>Hotel Expense</h1>
-            <button className="hoteldata-btn" onClick={hotelexpense}>
-              + Hotel Expenses
-            </button>
+            <div className="hoteldata-btngroup">
+            <div class="creditordata-dropdown">
+                <button class="creditordata-btn">
+                  <i class="bi bi-filter-circle"></i>&nbsp;Monthy Data
+                </button>
+                <div class="creditordata-dropdown-content">
+                  <Link to="#">January</Link>
+                  <Link to="#">February</Link>
+                  <Link to="#">March</Link>
+                  <Link to="#">April</Link>
+                  <Link to="#">May</Link>
+                  <Link to="#">June</Link>
+                  <Link to="#">July</Link>
+                  <Link to="#">August</Link>
+                  <Link to="#">September</Link>
+                  <Link to="#">October</Link>
+                  <Link to="#">November</Link>
+                  <Link to="#">December</Link>
+                </div>
+              </div>
+              <button className="hoteldata-btn">Export PDF</button>
+              <button className="hoteldata-btn">Export Excel</button>
+            </div>
           </div>
           <div className="hoteldata-headlinelist">
             <div className="hoteldata-headName">

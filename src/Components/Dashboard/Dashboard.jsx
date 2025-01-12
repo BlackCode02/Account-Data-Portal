@@ -9,11 +9,9 @@ const Dashboard = () => {
         <Sidebar />
         <div className="dashboardcontainer">
           <div className="dashboard-content">
-            <h1>Welcome To The VPVV Portal</h1>
+            <h1>Welcome To The VPVV Accounts Portal</h1>
             <p>
-              "We are excited to inform you that this is a trial version of our
-              portal, available for a limited time. Thank you for logging in and
-              exploring its features. We hope you enjoy the experience!"
+              
             </p>
           </div>
         </div>

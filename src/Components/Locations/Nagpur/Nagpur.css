@@ -1,0 +1,47 @@
+.nagpur-report-conatiner {
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .nagpur-report-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+  }
+  .nagpur-report-dashboard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem 0rem;
+  }
+  .nagpur-total-container {
+    /* border: 1px solid red; */
+    padding: 10px 18px;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 16px;
+  }
+  .nagpur-total-container h4 {
+    font-weight: 600;
+  }
+  .nagpur-total-container p {
+    font-size: 2rem;
+    padding: 0px 0px 10px 0px;
+  }
+  .nagpur-total-container a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s all linear;
+  }
+  .nagpur-total-container a:hover {
+    color: rgb(182, 180, 180);
+  }
+  

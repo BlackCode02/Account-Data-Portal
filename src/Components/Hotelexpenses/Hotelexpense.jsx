@@ -43,7 +43,7 @@ const Hotelexpense = () => {
               <h1>Hotel Expense</h1>
               <div className="hotel-savedata">
                 <button className="upload">Upload</button>
-              </div>
+               </div>
             </div>
 
             <div className="hotel-fillup">

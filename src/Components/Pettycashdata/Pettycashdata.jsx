@@ -1,22 +1,24 @@
 import React from "react";
-import "./Creditordata.css";
 import Sidebar from "../Sidebar/Sidebar";
+import "./Pettycashdata.css";
 import { Link } from "react-router-dom";
+
 // import { useNavigate } from "react-router-dom";
-const Creditordata = () => {
+
+const Pettycashdata = () => {
   return (
     <>
       <div style={{ display: "flex" }}>
         <Sidebar />
-        <div className="creditordata-conatiner">
-          <div className="creditordata-heading">
-            <h1>Creditor</h1>
-            <div className="creditordata-btngroup">
-              <div class="creditordata-dropdown">
-                <button class="creditordata-btn">
+        <div className="pettycashdata-conatiner">
+          <div className="pettycashdata-heading">
+            <h1>Petty Cash Expense</h1>
+            <div className="pettycashdata-btngroup">
+            <div class="pettycashdata-dropdown">
+                <button class="pettycashdata-btn">
                   <i class="bi bi-filter-circle"></i>&nbsp;Monthy Data
                 </button>
-                <div class="creditordata-dropdown-content">
+                <div class="pettycashdata-dropdown-content">
                   <Link to="#">January</Link>
                   <Link to="#">February</Link>
                   <Link to="#">March</Link>
@@ -31,27 +33,27 @@ const Creditordata = () => {
                   <Link to="#">December</Link>
                 </div>
               </div>
-              <button className="creditordata-btn">Export PDF</button>
-              <button className="creditordata-btn">Export Excel</button>
+              <button className="pettycashdata-btn">Export PDF</button>
+              <button className="pettycashdata-btn">Export Excel</button>
             </div>
           </div>
-          <div className="creditordata-headlinelist">
-            <div className="creditordata-headName">
+          <div className="pettycashdata-headlinelist">
+            <div className="pettycashdata-headName">
               <p>S.No.</p>
             </div>
-            <div className="creditordata-headName">
+            <div className="pettycashdata-headName">
               <p>Date</p>
             </div>
-            <div className="creditordata-headName">
+            <div className="pettycashdata-headName">
               <p>Description</p>
             </div>
-            <div className="creditordata-headName">
+            <div className="pettycashdata-headName">
               <p>Location</p>
             </div>
-            <div className="creditordata-headName">
+            <div className="pettycashdata-headName">
               <p>Amount</p>
             </div>
-            <div className="creditordata-headName">
+            <div className="pettycashdata-headName">
               <p>File</p>
             </div>
           </div>
@@ -61,4 +63,4 @@ const Creditordata = () => {
   );
 };
 
-export default Creditordata;
+export default Pettycashdata;

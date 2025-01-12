@@ -1,40 +1,76 @@
 .debtordata-conatiner {
-    width: 100%;
-    color: #fff;
-    padding: 20px;
-    height: 100vh;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .debtordata-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 20px;
-  }
-  .debtordata-btn {
-    font-size: 14px;
-    font-weight: 800;
-    padding: 7px 14px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  .debtordata-headlinelist {
-    border-bottom: 2px solid gray;
-    padding: 0px 0px 7px 0px;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .debtordata-headlinelist .debtordata-headName {
-    min-width: 13rem;
-  }
-  .debtordata-headlinelist .debtordata-headName p {
-    font-weight: 600;
-  }  
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.debtordata-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+.debtordata-btngroup {
+  display: flex;
+  gap: 0.3rem;
+}
+.debtordata-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.debtordata-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1;
+  height: 124px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.debtordata-dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+.debtordata-dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 4px;
+}
+.debtordata-dropdown:hover .debtordata-dropdown-content {
+  display: block;
+}
+
+.debtordata-btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 7px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.debtordata-headlinelist {
+  border-bottom: 2px solid gray;
+  padding: 0px 0px 7px 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.debtordata-headlinelist .debtordata-headName {
+  min-width: 13rem;
+}
+.debtordata-headlinelist .debtordata-headName p {
+  font-weight: 600;
+}

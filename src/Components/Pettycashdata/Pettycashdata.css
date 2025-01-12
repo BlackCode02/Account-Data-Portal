@@ -1,4 +1,4 @@
-.creditordata-conatiner {
+.pettycashdata-conatiner {
   width: 100%;
   color: #fff;
   padding: 20px;
@@ -7,7 +7,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.creditordata-heading {
+.pettycashdata-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,15 +15,15 @@
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
 }
-.creditordata-btngroup {
+.pettycashdata-btngroup {
   display: flex;
   gap: 0.3rem;
 }
-.creditordata-dropdown {
+.pettycashdata-dropdown {
   position: relative;
   display: inline-block;
 }
-.creditordata-dropdown-content {
+.pettycashdata-dropdown-content {
   display: none;
   position: absolute;
   background-color: #fff;
@@ -37,21 +37,21 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.creditordata-dropdown-content a {
+.pettycashdata-dropdown-content a {
   color: black;
   padding: 10px 10px;
   text-decoration: none;
   display: block;
 }
-.creditordata-dropdown-content a:hover {
+.pettycashdata-dropdown-content a:hover {
   background-color: #ddd;
   border-radius: 4px;
 }
-.creditordata-dropdown:hover .creditordata-dropdown-content {
+.pettycashdata-dropdown:hover .pettycashdata-dropdown-content {
   display: block;
 }
 
-.creditordata-btn {
+.pettycashdata-btn {
   font-size: 14px;
   font-weight: 800;
   padding: 7px 14px;
@@ -59,7 +59,7 @@
   cursor: pointer;
   border-radius: 4px;
 }
-.creditordata-headlinelist {
+.pettycashdata-headlinelist {
   border-bottom: 2px solid gray;
   padding: 0px 0px 7px 0px;
   display: flex;
@@ -68,9 +68,9 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.creditordata-headlinelist .creditordata-headName {
+.pettycashdata-headlinelist .pettycashdata-headName {
   min-width: 13rem;
 }
-.creditordata-headlinelist .creditordata-headName p {
+.pettycashdata-headlinelist .pettycashdata-headName p {
   font-weight: 600;
 }

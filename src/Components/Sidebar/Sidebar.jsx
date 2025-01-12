@@ -10,6 +10,10 @@ const Sidebar = () => {
   const profile = () => {
     click("/profile");
   };
+  const admin_panel = () => {
+    click("/admin_panel");
+  };
+
   return (
     <>
       <div className="sidebar-container">
@@ -21,7 +25,7 @@ const Sidebar = () => {
               srcset=""
               style={{ height: "125px" }}
             />
-            <p>Ankit Kumar</p>
+            <p>VPVV Accounts</p>
           </div>
           <div className="sidebar-list">
             <ul>
@@ -49,19 +53,23 @@ const Sidebar = () => {
                 <i class="bi bi-credit-card-2-front"></i>
                 <li>Creditor</li>
               </NavLink>
+              <NavLink to="/petty_cash">
+                <i class="bi bi-cash-stack"></i>
+                <li>Petty cash</li>
+              </NavLink>
               <NavLink to="/report">
                 <i class="bi bi-journal-text"></i>
                 <li>Report</li>
               </NavLink>
               <NavLink to="/userrequest">
-              <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-pencil-square"></i>
                 <li>Request</li>
               </NavLink>
             </ul>
           </div>
           <div className="siderbar-footer">
             <div className="sidebar-admin-btn">
-              <button>Admin</button>
+              <button onClick={admin_panel}>Admin</button>
             </div>
             <div className="sidebar-footer-btn">
               <button style={{ marginRight: "10px" }} onClick={profile}>

@@ -16,6 +16,42 @@
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
 }
+.hoteldata-btngroup{
+  display: flex;
+gap: 0.3rem;
+}
+.hoteldata-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.hoteldata-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1;
+  height: 124px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hoteldata-dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+.hoteldata-dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 4px;
+}
+.hoteldata-dropdown:hover .hoteldata-dropdown-content {
+  display: block;
+}
+
 .hoteldata-btn {
   font-size: 14px;
   font-weight: 800;

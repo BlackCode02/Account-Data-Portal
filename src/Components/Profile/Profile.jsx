@@ -1,7 +1,7 @@
 import React from "react";
 import "./Profile.css";
 import Sidebar from "../Sidebar/Sidebar";
-import logo from "../logo-vpvv.png"
+// import logo from "../logo-vpvv.png"
 const Profile = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const Profile = () => {
           </div>
           <div className="profile-section">
             <div className="profile-img">
-              <img src={logo} alt="" width= "100%" height= "100%"/>
+              <img src="https://mymodernmet.com/wp/wp-content/uploads/2019/09/100k-ai-faces-6.jpg" alt="" width= "100%" height= "100%"/>
             </div>
             <div className="profile-box">
               <div className="profiledata-section">

@@ -1,12 +1,10 @@
 import React from "react";
 import "./Debtordata.css";
 import Sidebar from "../Sidebar/Sidebar";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 const Debtordata = () => {
-  const click = useNavigate();
-  const debtor = () => {
-    click("/debtor");
-  };
+
   return (
     <>
       <div style={{ display: "flex" }}>
@@ -14,9 +12,29 @@ const Debtordata = () => {
         <div className="debtordata-conatiner">
           <div className="debtordata-heading">
             <h1>Debtor</h1>
-            <button className="debtordata-btn" onClick={debtor}>
-              + Debtor
-            </button>
+            <div className="debtordata-btngroup">
+            <div class="debtordata-dropdown">
+                <button class="debtordata-btn">
+                  <i class="bi bi-filter-circle"></i>&nbsp;Monthy Data
+                </button>
+                <div class="debtordata-dropdown-content">
+                  <Link to="#">January</Link>
+                  <Link to="#">February</Link>
+                  <Link to="#">March</Link>
+                  <Link to="#">April</Link>
+                  <Link to="#">May</Link>
+                  <Link to="#">June</Link>
+                  <Link to="#">July</Link>
+                  <Link to="#">August</Link>
+                  <Link to="#">September</Link>
+                  <Link to="#">October</Link>
+                  <Link to="#">November</Link>
+                  <Link to="#">December</Link>
+                </div>
+              </div>
+            <button className="debtordata-btn">Export PDF</button>
+            <button className="debtordata-btn">Export Excel</button>
+            </div>
           </div>
           <div className="debtordata-headlinelist">
             <div className="debtordata-headName">

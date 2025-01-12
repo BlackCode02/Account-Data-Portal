@@ -19,6 +19,8 @@
 .report-dashboard {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem 0rem;
 }
 .total-container {
   /* border: 1px solid red; */
