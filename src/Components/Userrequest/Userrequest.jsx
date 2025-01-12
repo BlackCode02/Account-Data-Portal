@@ -30,7 +30,7 @@ const Userrequest = () => {
                 </td>
                 <td>ankit4890@gmail.com</td>
                 <td>43000.00</td>
-                <td></td>
+                <td>Active</td>
                 <td>
                   <button id="approved-btn">Approved</button>
                   <button id="notApproved-btn">Not Approved</button>
@@ -46,7 +46,7 @@ const Userrequest = () => {
                 </td>
                 <td>Harsh1980@gmail.com</td>
                 <td>76000.00</td>
-                <td></td>
+                <td>Active</td>
                 <td>
                   <button id="approved-btn">Approved</button>
                   <button id="notApproved-btn">Not Approved</button>
