@@ -11,7 +11,7 @@ const Sidebar = () => {
     click("/profile");
   };
   const admin_panel = () => {
-    click("/admin_panel");
+    click("/admin/dashboard");
   };
 
   return (

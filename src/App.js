@@ -21,10 +21,13 @@ import Request from "./Components/Request/Request";
 import Profile from "./Components/Profile/Profile";
 import Pettycash from "./Components/Pettycash/Pettycash";
 import Pettycashdata from "./Components/Pettycashdata/Pettycashdata";
-import Adminsidebar from "./Components/Adminsidebar/Adminsidebar";
-import Newdelhi from "./Components/Locations/Newdelhi/Newdelhi";
-import Nagpur from "./Components/Locations/Nagpur/Nagpur";
-import Thiruvananthapuram from "./Components/Locations/Thiruvananthapuram/Thiruvananthapuram";
+import Newdelhi from "./Adminpanel/Locations/Newdelhi/Newdelhi";
+import Nagpur from "./Adminpanel/Locations/Nagpur/Nagpur";
+import Thiruvananthapuram from "./Adminpanel/Locations/Thiruvananthapuram/Thiruvananthapuram";
+import Admindashboard from "./Adminpanel/Admindasboard/Admindashboard";
+import Tuticorin from "./Adminpanel/Locations/Tuticorin/Tuticorin";
+import Users from "./Adminpanel/Users/Users";
+
 // import Sidebar from './Components/Sidebar/Sidebar';
 const App = () => {
   return (
@@ -53,14 +56,15 @@ const App = () => {
           <Route path="/approval_admin/:id" element={<Userapproval />} />
           <Route path="/request_id" element={<Request />} />
           <Route path="/profile" element={<Profile />} />
-          {/* Admin Sidebar */}
-          <Route path="/admin_panel" element={<Adminsidebar />} />
+          <Route path="/admin/dashboard" element={<Admindashboard />} />
           <Route path="/admin/new_delhi_report" element={<Newdelhi />} />
           <Route path="/admin/nagpur_report" element={<Nagpur />} />
-          <Route
+           <Route
             path="/admin/thiruvananthapuram_report"
             element={<Thiruvananthapuram />}
           />
+          <Route path="/admin/tuticorin_report" element={<Tuticorin />} />
+          <Route path="/admin/users" element={<Users />} />
           {/* <Route path="/sidebar" element={<Sidebar />} /> */}
         </Routes>
       </BrowserRouter>

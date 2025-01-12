@@ -1,0 +1,16 @@
+.users-container {
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.users-heading {
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}

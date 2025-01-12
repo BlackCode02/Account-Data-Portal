@@ -1,0 +1,21 @@
+.admin-dashboard-container {
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .admin-dashboard-container .admin-dashboard-content {
+    width: 650px;
+    text-align: center;
+  }
+  .admin-dashboard-container .admin-dashboard-content h1 {
+    font-size: 4rem;
+  }
+  

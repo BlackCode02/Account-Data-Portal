@@ -1,14 +1,13 @@
 import React from "react";
-import "./Newdelhi.css"
+import "./Newdelhi.css";
 import Adminsidebar from "../../Adminsidebar/Adminsidebar";
-import logo from "../../../"
 import { Link } from "react-router-dom";
 const Newdelhi = () => {
   return (
     <>
-          <div style={{ display: "flex" }}>
-              <Adminsidebar/>
-              <div className="delhi-report-conatiner">
+      <div style={{ display: "flex" }}>
+        <Adminsidebar />
+        <div className="delhi-report-conatiner">
           <div className="delhi-report-heading">
             <h1>New Delhi Report</h1>
           </div>
