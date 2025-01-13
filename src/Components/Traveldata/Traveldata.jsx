@@ -37,24 +37,54 @@ const Traveldata = () => {
             </div>
           </div>
           <div className="traveldata-headlinelist">
-            <div className="traveldata-headName">
-              <p>S.No.</p>
-            </div>
-            <div className="traveldata-headName">
-              <p>Date</p>
-            </div>
-            <div className="traveldata-headName">
-              <p>Description</p>
-            </div>
-            <div className="traveldata-headName">
-              <p>Location</p>
-            </div>
-            <div className="traveldata-headName">
-              <p>Amount</p>
-            </div>
-            <div className="traveldata-headName">
-              <p>File</p>
-            </div>
+            <table>
+              <thead>
+                <th className="traveldata-tabel-head">
+                  <div className="traveldata-headName">
+                    <p>S.No.</p>
+                  </div>
+                </th>
+                <th style={{ width: "200px" }}>
+                  <div className="traveldata-headName">
+                    <p>Name</p>
+                  </div>
+                </th>
+                <th style={{ width: "200px" }}>
+                  <div className="traveldata-headName">
+                    <p>Date</p>
+                  </div>
+                </th>
+                <th style={{ width: "400px" }}>
+                  <div className="traveldata-headName">
+                    <p>Description</p>
+                  </div>
+                </th>
+                <th>
+                  <div className="traveldata-headName">
+                    <p>Location</p>
+                  </div>
+                </th>
+                <th>
+                  <div className="traveldata-headName">
+                    <p>Amount</p>
+                  </div>
+                </th>
+                <th>
+                  <div className="traveldata-headName">
+                    <p>File</p>
+                  </div>
+                </th>
+              </thead>
+              <tbody>
+                <td>01</td>
+                <td>23/23/5444</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

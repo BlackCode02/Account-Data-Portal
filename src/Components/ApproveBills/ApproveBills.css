@@ -1,0 +1,128 @@
+.approvalbillscontainer {
+  width: 90%;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  background-color: #000;
+}
+.approvalbills-main {
+  /* border: 1px solid red; */
+  background-color: #000;
+}
+.approvalbills-heading {
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.approvalbills-savedata {
+  align-self: center;
+}
+.approvalbills-savedata .approvalbills-upload {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #0d6efd;
+  color: #fff;
+  border-radius: 4px;
+}
+.approvalbills-fillup {
+  display: flex;
+}
+.approvalbills-fillup .approvalbills-formcol {
+  display: flex;
+  flex-direction: column;
+  width: 150% !important;
+}
+.approvalbills-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 40px 0px;
+  width: 100% !important;
+}
+.approvalbills-total-amt {
+  width: 100%;
+}
+#approvalbills-decription {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 150px;
+  border-radius: 6px;
+}
+.approvalbills-decription-label-bdy {
+  align-items: flex-start !important;
+}
+.approvalbills-inputdetail textarea {
+  font-size: 16px;
+  padding: 8px 20px;
+}
+.approvalbills-label {
+  font-size: 18px;
+  font-weight: 600;
+  width: 33%;
+  display: flex;
+  align-items: center;
+}
+.approvalbills-inputdetail {
+  width: 100%;
+}
+.approvalbills-inputdetail input {
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 100%;
+}
+.approvalbills-fillinput {
+  display: flex;
+}
+
+.approvalbills-amount {
+  display: flex;
+  width: 100%;
+}
+.approvalbills-total-label,
+.approvalbills-date-label {
+  width: 100%;
+}
+.approvalbills-date-label {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.approvalbills-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+.approvalbills-upload-container,
+.approvalbills-upload-container img {
+  background-color: #fff;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.approvalbills-moreexpense {
+  display: flex;
+  justify-content: center;
+}
+.approvalbills-moreexpense button {
+  font-size: 18px;
+  font-weight: 800;
+  padding: 7px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}

@@ -38,24 +38,54 @@ const Guesthousedata = () => {
             </div>
           </div>
           <div className="guesthousedata-headlinelist">
-            <div className="guesthousedata-headName">
-              <p>S.No.</p>
-            </div>
-            <div className="guesthousedata-headName">
-              <p>Date</p>
-            </div>
-            <div className="guesthousedata-headName">
-              <p>Description</p>
-            </div>
-            <div className="guesthousedata-headName">
-              <p>Location</p>
-            </div>
-            <div className="guesthousedata-headName">
-              <p>Amount</p>
-            </div>
-            <div className="guesthousedata-headName">
-              <p>File</p>
-            </div>
+            <table>
+              <thead>
+                <th className="hoteldata-tabel-head">
+                  <div className="guesthousedata-headName">
+                    <p>S.No.</p>
+                  </div>
+                </th>
+                <th style={{ width: "200px" }}>
+                  <div className="guesthousedata-headName">
+                    <p>Name</p>
+                  </div>
+                </th>
+                <th style={{ width: "200px" }}>
+                  <div className="guesthousedata-headName">
+                    <p>Date</p>
+                  </div>
+                </th>
+                <th style={{ width: "400px" }}>
+                  <div className="guesthousedata-headName">
+                    <p>Description</p>
+                  </div>
+                </th>
+                <th>
+                  <div className="guesthousedata-headName">
+                    <p>Location</p>
+                  </div>
+                </th>
+                <th>
+                  <div className="guesthousedata-headName">
+                    <p>Amount</p>
+                  </div>
+                </th>
+                <th>
+                  <div className="guesthousedata-headName">
+                    <p>File</p>
+                  </div>
+                </th>
+              </thead>
+              <tbody>
+                <td>01</td>
+                <td>23/23/5444</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

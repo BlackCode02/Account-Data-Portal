@@ -4,8 +4,6 @@ import "./Hoteldata.css";
 import { Link } from "react-router-dom";
 
 const Hoteldata = () => {
-
-
   return (
     <>
       <div style={{ display: "flex" }}>
@@ -14,7 +12,7 @@ const Hoteldata = () => {
           <div className="hoteldata-heading">
             <h1>Hotel Expense</h1>
             <div className="hoteldata-btngroup">
-            <div class="creditordata-dropdown">
+              <div class="creditordata-dropdown">
                 <button class="creditordata-btn">
                   <i class="bi bi-filter-circle"></i>&nbsp;Monthy Data
                 </button>
@@ -37,25 +35,56 @@ const Hoteldata = () => {
               <button className="hoteldata-btn">Export Excel</button>
             </div>
           </div>
+
           <div className="hoteldata-headlinelist">
-            <div className="hoteldata-headName">
-              <p>S.No.</p>
-            </div>
-            <div className="hoteldata-headName">
-              <p>Date</p>
-            </div>
-            <div className="hoteldata-headName">
-              <p>Description</p>
-            </div>
-            <div className="hoteldata-headName">
-              <p>Location</p>
-            </div>
-            <div className="hoteldata-headName">
-              <p>Amount</p>
-            </div>
-            <div className="hoteldata-headName">
-              <p>File</p>
-            </div>
+            <table>
+              <thead>
+                <th className="hoteldata-tabel-head">
+                  <div className="hoteldata-headName">
+                    <p>S.No.</p>
+                  </div>
+                </th>
+                <th style={{ width: "200px" }}>
+                  <div className="hoteldata-headName">
+                    <p>Name</p>
+                  </div>
+                </th>
+                <th style={{ width: "200px" }}>
+                  <div className="hoteldata-headName">
+                    <p>Date</p>
+                  </div>
+                </th>
+                <th style={{ width: "400px" }}>
+                  <div className="hoteldata-headName">
+                    <p>Description</p>
+                  </div>
+                </th>
+                <th>
+                  <div className="hoteldata-headName">
+                    <p>Location</p>
+                  </div>
+                </th>
+                <th>
+                  <div className="hoteldata-headName">
+                    <p>Amount</p>
+                  </div>
+                </th>
+                <th>
+                  <div className="hoteldata-headName">
+                    <p>File</p>
+                  </div>
+                </th>
+              </thead>
+              <tbody>
+                <td>01</td>
+                <td>23/23/5444</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

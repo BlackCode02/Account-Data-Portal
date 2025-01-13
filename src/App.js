@@ -27,6 +27,7 @@ import Thiruvananthapuram from "./Adminpanel/Locations/Thiruvananthapuram/Thiruv
 import Admindashboard from "./Adminpanel/Admindasboard/Admindashboard";
 import Tuticorin from "./Adminpanel/Locations/Tuticorin/Tuticorin";
 import Users from "./Adminpanel/Users/Users";
+import ApproveBills from "./Components/ApproveBills/ApproveBills";
 
 // import Sidebar from './Components/Sidebar/Sidebar';
 const App = () => {
@@ -65,6 +66,7 @@ const App = () => {
           />
           <Route path="/admin/tuticorin_report" element={<Tuticorin />} />
           <Route path="/admin/users" element={<Users />} />
+          <Route path="/approval/bills/:id" element={<ApproveBills />} />
           {/* <Route path="/sidebar" element={<Sidebar />} /> */}
         </Routes>
       </BrowserRouter>

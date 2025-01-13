@@ -37,6 +37,7 @@ const Request = () => {
               <option value="Select">Select</option>
               <option value="New Delhi">New Delhi</option>
               <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+              <option value="Tuticorin">Tuticorin</option>
               <option value="Nagpur">Nagpur</option>
                 </select>
               </div>

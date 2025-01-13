@@ -36,24 +36,54 @@ const Creditordata = () => {
             </div>
           </div>
           <div className="creditordata-headlinelist">
-            <div className="creditordata-headName">
-              <p>S.No.</p>
-            </div>
-            <div className="creditordata-headName">
-              <p>Date</p>
-            </div>
-            <div className="creditordata-headName">
-              <p>Description</p>
-            </div>
-            <div className="creditordata-headName">
-              <p>Location</p>
-            </div>
-            <div className="creditordata-headName">
-              <p>Amount</p>
-            </div>
-            <div className="creditordata-headName">
-              <p>File</p>
-            </div>
+            <table>
+              <thead>
+                <th className="creditordata-tabel-head">
+                  <div className="creditordata-headName">
+                    <p>S.No.</p>
+                  </div>
+                </th>
+                <th style={{ width: "200px" }}>
+                  <div className="creditordata-headName">
+                    <p>Name</p>
+                  </div>
+                </th>
+                <th style={{ width: "200px" }}>
+                  <div className="creditordata-headName">
+                    <p>Date</p>
+                  </div>
+                </th>
+                <th style={{ width: "400px" }}>
+                  <div className="creditordata-headName">
+                    <p>Description</p>
+                  </div>
+                </th>
+                <th>
+                  <div className="creditordata-headName">
+                    <p>Location</p>
+                  </div>
+                </th>
+                <th>
+                  <div className="creditordata-headName">
+                    <p>Amount</p>
+                  </div>
+                </th>
+                <th>
+                  <div className="creditordata-headName">
+                    <p>File</p>
+                  </div>
+                </th>
+              </thead>
+              <tbody>
+                <td>01</td>
+                <td>23/23/5444</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
